@@ -1,45 +1,40 @@
-# libretro-dolphin-launcher
+# libretro-java-launcher
 
-Launch Nintendo Wii and GameCube games through [Dolphin](https://dolphin-emu.org) native, directly from [RetroArch](http://www.libretro.com/).
-
-![Dolphin Launcher Screenshot](screenshot.jpg)
-
-Note: This is a big hack, and it's recommended to use the [Dolphin Core](https://github.com/libretro/dolphin) instead.
+Launch Java games directly from [RetroArch](http://www.libretro.com/).
 
 ## Installation
 
 1. Compile the core
     ``` bash
-    git clone https://github.com/RobLoach/libretro-dolphin-launcher.git
-    cd libretro-dolphin-launcher
+    git clone https://github.com/DodoLeDev/libretro-java-launcher.git
+    cd libretro-java-launcher
     make
     ```
 
 2. Copy the core file to the RetroArch cores directory
     ``` bash
-    cp dolphin_launcher_libretro.so /usr/lib/libretro/
-    cp dolphin_launcher_libretro.info /usr/share/libretro/info/
+    cp java_launcher_libretro.so /usr/lib/libretro/
+    cp java_launcher_libretro.info /usr/share/libretro/info/
     ```
 
-3. Make sure [Dolphin](http://dolphin-emu.org) [is installed](https://dolphin-emu.org/download/?ref=btn). You should be able to run at least one of the following commands:
+3. Make sure [Java](https://openjdk.org/) [is installed](https://pkgs.org/search/?q=openjdk%20jre). You should be able to run at least this command:
     ``` bash
-    dolphin-emu --version
-    dolphin-emu-nogui --version
-    flatpak run org.DolphinEmu.dolphin-emu --version
+    java
     ```
 
 ## Usage
 
-1. Scan Nintendo GameCube and Wii games in RetroArch
+1. Scan JAR-packaged games in RetroArch
 
 2. Launch the games directly from the RetroArch menu
 
 3. Alternatively, you can run games through the command line
     ``` bash
-    retroarch -L dolphin_launcher_libretro.so Mario.gcm
+    retroarch -L java_launcher_libretro.so Mindustry.jar
     ```
 
 ## Contributors
 
-- [Rob Loach](http://github.com/robloach)
-- [Alcaro](https://github.com/Alcaro)
+- [DodoLeDev](https://github.com/DodoLeDev)
+- [Rob Loach](http://github.com/robloach) _(original project)_
+- [Alcaro](https://github.com/Alcaro) _(original project)_
