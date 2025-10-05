@@ -4,7 +4,7 @@ Launch Java games directly from [RetroArch](http://www.libretro.com/).
 
 ## Installation
 
-1. Compile the core
+1. Compile the core or grab it from the [Releases](https://github.com/DodoLeDev/libretro-java-launcher/releases)
     ``` bash
     git clone https://github.com/DodoLeDev/libretro-java-launcher.git
     cd libretro-java-launcher
