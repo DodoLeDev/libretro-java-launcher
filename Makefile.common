@@ -1,1 +1,1 @@
-SOURCES_C += $(CORE_DIR)/libretro-java-launcher.c
+SOURCES_C += $(CORE_DIR)/libretro-external-launcher.c
